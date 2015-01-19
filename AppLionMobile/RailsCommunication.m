@@ -50,7 +50,7 @@ static NSString *const ROOTURL= @"http://applion.herokuapp.com/";
 {
 
     NSString *fixedUrl = [NSString stringWithFormat:@"%@%@",
-                          ROOTURL,@"api/user"];
+                          ROOTURL,@"api/login"];
     NSURL *url = [NSURL URLWithString:fixedUrl];
     // Request
     NSMutableURLRequest *request =
@@ -61,6 +61,27 @@ static NSString *const ROOTURL= @"http://applion.herokuapp.com/";
     NSURLSessionDataTask *dataTask =
     [self.session dataTaskWithRequest:request
                   completionHandler:completion];
+    [dataTask resume];
+}
+-(void)loginWithInput:(NSDictionary*) input withCompletion:(void (^)(NSData *data,
+                                     NSURLResponse *response,
+                                     NSError *error))completion
+{
+    
+    NSString *fixedUrl = [NSString stringWithFormat:@"%@%@",
+                          ROOTURL,@"api/login"];
+    NSURL *url = [NSURL URLWithString:fixedUrl];
+    // Request
+    NSMutableURLRequest *request =
+    [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:30.0];
+    // Request type
+      [request setValue:input[@"email"] forHTTPHeaderField:@"email"];
+      [request setValue:input[@"password"] forHTTPHeaderField:@"password"];
+    [request setHTTPMethod:@"GET"];
+    // Session
+    NSURLSessionDataTask *dataTask =
+    [self.session dataTaskWithRequest:request
+                    completionHandler:completion];
     [dataTask resume];
 }
 

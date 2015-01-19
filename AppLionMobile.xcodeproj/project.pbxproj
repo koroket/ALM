@@ -18,6 +18,8 @@
 		625626201A6CD4FE0042703F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256261F1A6CD4FE0042703F /* LoginViewController.m */; };
 		625626231A6CD50B0042703F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626221A6CD50B0042703F /* SignUpViewController.m */; };
 		625626261A6CD9150042703F /* RailsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626251A6CD9150042703F /* RailsCommunication.m */; };
+		625626291A6D0A000042703F /* AppCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626281A6D0A000042703F /* AppCommunication.m */; };
+		6256262D1A6D0B100042703F /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256262C1A6D0B100042703F /* ProfileTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		625626221A6CD50B0042703F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		625626241A6CD9150042703F /* RailsCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RailsCommunication.h; sourceTree = "<group>"; };
 		625626251A6CD9150042703F /* RailsCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RailsCommunication.m; sourceTree = "<group>"; };
+		625626271A6D0A000042703F /* AppCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppCommunication.h; sourceTree = "<group>"; };
+		625626281A6D0A000042703F /* AppCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommunication.m; sourceTree = "<group>"; };
+		6256262B1A6D0B100042703F /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
+		6256262C1A6D0B100042703F /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +102,9 @@
 				625625F61A6CCE470042703F /* AppDelegate.m */,
 				625626241A6CD9150042703F /* RailsCommunication.h */,
 				625626251A6CD9150042703F /* RailsCommunication.m */,
+				625626271A6D0A000042703F /* AppCommunication.h */,
+				625626281A6D0A000042703F /* AppCommunication.m */,
+				6256262A1A6D0AE10042703F /* App */,
 				6256261A1A6CD4C70042703F /* Initializing */,
 				625625FE1A6CCE470042703F /* Main.storyboard */,
 				625626011A6CCE470042703F /* Images.xcassets */,
@@ -143,6 +152,15 @@
 				625626221A6CD50B0042703F /* SignUpViewController.m */,
 			);
 			name = Initializing;
+			sourceTree = "<group>";
+		};
+		6256262A1A6D0AE10042703F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				6256262B1A6D0B100042703F /* ProfileTableViewController.h */,
+				6256262C1A6D0B100042703F /* ProfileTableViewController.m */,
+			);
+			name = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,7 +266,9 @@
 				625625F71A6CCE470042703F /* AppDelegate.m in Sources */,
 				625625FA1A6CCE470042703F /* AppLionMobile.xcdatamodeld in Sources */,
 				625626231A6CD50B0042703F /* SignUpViewController.m in Sources */,
+				6256262D1A6D0B100042703F /* ProfileTableViewController.m in Sources */,
 				625625F41A6CCE470042703F /* main.m in Sources */,
+				625626291A6D0A000042703F /* AppCommunication.m in Sources */,
 				6256261D1A6CD4E20042703F /* LoadingViewController.m in Sources */,
 				625626201A6CD4FE0042703F /* LoginViewController.m in Sources */,
 				625626261A6CD9150042703F /* RailsCommunication.m in Sources */,

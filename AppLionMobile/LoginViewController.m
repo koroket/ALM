@@ -8,7 +8,10 @@
 
 #import "LoginViewController.h"
 #import "RailsCommunication.h"
+#import "AppCommunication.h"
 @interface LoginViewController ()
+@property (strong, nonatomic) IBOutlet UITextField *emailTextField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
 
 @end
 
@@ -30,22 +33,58 @@
     return YES;
 }
 - (IBAction)loginPressed:(id)sender {
-    [[RailsCommunication sharedCommunicator] loginWithCompletion:^(NSData *data,
+    NSDictionary *input = [NSDictionary dictionaryWithObjectsAndKeys:
+                                self.emailTextField.text,
+                                @"email",
+                                self.passwordTextField.text,
+                                @"password",
+                                nil];
+    [[RailsCommunication sharedCommunicator] loginWithInput:input withCompletion:^(NSData *data,
                                               NSURLResponse *response,
                                               NSError *error)
      {
-         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
-         NSInteger responseStatusCode = [httpResponse statusCode];
-         
-         NSDictionary *fetchedData = [NSJSONSerialization JSONObjectWithData:data
-                                                                options:0
-                                                                  error:nil];
-         NSLog(@"ERROR: %@\n",fetchedData);
-         NSLog(@"NSURLRESPONSE: %@\n",response);
-         NSLog(@"NSERROR: %@\n",error);
-         
+         dispatch_async(dispatch_get_main_queue(), ^(void)
+                        {
+                            NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+                            NSInteger responseStatusCode = [httpResponse statusCode];
+                            
+                            NSDictionary *fetchedData = [NSJSONSerialization JSONObjectWithData:data
+                                                                                        options:0
+                                                                                          error:nil];
+                            NSLog(@"Response: %@\n",fetchedData);
+                            NSLog(@"NSURLRESPONSE: %@\n",response);
+                            NSLog(@"NSERROR: %@\n",error);
+                            
+                            NSLog([NSString stringWithFormat:@"MY TOKEN IS: %@",fetchedData[@"mobile_token"]]);
+                            NSDictionary *userinfo = fetchedData[@"opportunities"];
+                            NSArray* opplist = userinfo[@"opportunities"];
+                            NSString* email = userinfo[@"email"];
+                            
+                            [AppCommunication sharedCommunicator].email = email;
+                            [AppCommunication sharedCommunicator].opportunities = opplist;
+                            [self performSegueWithIdentifier:@"Loggingin" sender:self];
+                        });
      }];
 }
+//-(void)workingfunction
+//{
+//    [[RailsCommunication sharedCommunicator] loginWithCompletion:^(NSData *data,
+//                                                                   NSURLResponse *response,
+//                                                                   NSError *error)
+//     {
+//         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+//         NSInteger responseStatusCode = [httpResponse statusCode];
+//         
+//         NSDictionary *fetchedData = [NSJSONSerialization JSONObjectWithData:data
+//                                                                     options:0
+//                                                                       error:nil];
+//         NSLog(@"ERROR: %@\n",fetchedData);
+//         NSLog(@"NSURLRESPONSE: %@\n",response);
+//         NSLog(@"NSERROR: %@\n",error);
+//         
+//     }];
+//}
+
 
 /*
 #pragma mark - Navigation

@@ -13,4 +13,5 @@
 -(void)loginWithCompletion:(void (^)(NSData *data,
                                      NSURLResponse *response,
                                      NSError *error))completion;
+-(void)loginWithInput:(NSDictionary*) input withCompletion:(void (^)(NSData *, NSURLResponse *, NSError *))completion;
 @end

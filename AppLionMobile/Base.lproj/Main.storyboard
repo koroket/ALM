@@ -115,7 +115,9 @@
                         </constraints>
                     </view>
                     <connections>
-                        <segue destination="Ngu-Wx-VsO" kind="show" identifier="LoggingIn" id="Xg1-cg-A5b"/>
+                        <outlet property="emailTextField" destination="kDq-Vd-xEW" id="EZF-Em-WZp"/>
+                        <outlet property="passwordTextField" destination="YYM-Ha-4xe" id="GwW-re-CcO"/>
+                        <segue destination="Ngu-Wx-VsO" kind="show" identifier="Loggingin" id="Xg1-cg-A5b"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ArG-Ff-qLA" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -125,13 +127,13 @@
         <!--Profile Table View Controller-->
         <scene sceneID="MW6-fL-2EV">
             <objects>
-                <tableViewController id="Ngu-Wx-VsO" userLabel="Profile Table View Controller" sceneMemberID="viewController">
+                <tableViewController id="Ngu-Wx-VsO" userLabel="Profile Table View Controller" customClass="ProfileTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="8Zz-Rl-Fop">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="7Xh-G0-SC1">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Item Cell" id="7Xh-G0-SC1">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Xh-G0-SC1" id="ZAq-QB-ruJ">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -143,6 +145,12 @@
                             <outlet property="delegate" destination="Ngu-Wx-VsO" id="FoO-e5-0UY"/>
                         </connections>
                     </tableView>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Jobs" id="v1K-JF-qVa">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="sRO-Xs-c52"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mZC-sU-cdA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
