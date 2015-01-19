@@ -1,0 +1,444 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		625625F41A6CCE470042703F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 625625F31A6CCE470042703F /* main.m */; };
+		625625F71A6CCE470042703F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 625625F61A6CCE470042703F /* AppDelegate.m */; };
+		625625FA1A6CCE470042703F /* AppLionMobile.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 625625F81A6CCE470042703F /* AppLionMobile.xcdatamodeld */; };
+		625625FD1A6CCE470042703F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625625FC1A6CCE470042703F /* ViewController.m */; };
+		625626001A6CCE470042703F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 625625FE1A6CCE470042703F /* Main.storyboard */; };
+		625626021A6CCE470042703F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 625626011A6CCE470042703F /* Images.xcassets */; };
+		625626051A6CCE470042703F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 625626031A6CCE470042703F /* LaunchScreen.xib */; };
+		625626111A6CCE480042703F /* AppLionMobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626101A6CCE480042703F /* AppLionMobileTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6256260B1A6CCE470042703F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 625625E61A6CCE470042703F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 625625ED1A6CCE470042703F;
+			remoteInfo = AppLionMobile;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		625625EE1A6CCE470042703F /* AppLionMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppLionMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		625625F21A6CCE470042703F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625625F31A6CCE470042703F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		625625F51A6CCE470042703F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		625625F61A6CCE470042703F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		625625F91A6CCE470042703F /* AppLionMobile.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppLionMobile.xcdatamodel; sourceTree = "<group>"; };
+		625625FB1A6CCE470042703F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		625625FC1A6CCE470042703F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		625625FF1A6CCE470042703F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		625626011A6CCE470042703F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		625626041A6CCE470042703F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		6256260A1A6CCE470042703F /* AppLionMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AppLionMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6256260F1A6CCE480042703F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		625626101A6CCE480042703F /* AppLionMobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppLionMobileTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		625625EB1A6CCE470042703F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625626071A6CCE470042703F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		625625E51A6CCE470042703F = {
+			isa = PBXGroup;
+			children = (
+				625625F01A6CCE470042703F /* AppLionMobile */,
+				6256260D1A6CCE470042703F /* AppLionMobileTests */,
+				625625EF1A6CCE470042703F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		625625EF1A6CCE470042703F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				625625EE1A6CCE470042703F /* AppLionMobile.app */,
+				6256260A1A6CCE470042703F /* AppLionMobileTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		625625F01A6CCE470042703F /* AppLionMobile */ = {
+			isa = PBXGroup;
+			children = (
+				625625F51A6CCE470042703F /* AppDelegate.h */,
+				625625F61A6CCE470042703F /* AppDelegate.m */,
+				625625FB1A6CCE470042703F /* ViewController.h */,
+				625625FC1A6CCE470042703F /* ViewController.m */,
+				625625FE1A6CCE470042703F /* Main.storyboard */,
+				625626011A6CCE470042703F /* Images.xcassets */,
+				625626031A6CCE470042703F /* LaunchScreen.xib */,
+				625625F81A6CCE470042703F /* AppLionMobile.xcdatamodeld */,
+				625625F11A6CCE470042703F /* Supporting Files */,
+			);
+			path = AppLionMobile;
+			sourceTree = "<group>";
+		};
+		625625F11A6CCE470042703F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				625625F21A6CCE470042703F /* Info.plist */,
+				625625F31A6CCE470042703F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6256260D1A6CCE470042703F /* AppLionMobileTests */ = {
+			isa = PBXGroup;
+			children = (
+				625626101A6CCE480042703F /* AppLionMobileTests.m */,
+				6256260E1A6CCE480042703F /* Supporting Files */,
+			);
+			path = AppLionMobileTests;
+			sourceTree = "<group>";
+		};
+		6256260E1A6CCE480042703F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6256260F1A6CCE480042703F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		625625ED1A6CCE470042703F /* AppLionMobile */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625626141A6CCE480042703F /* Build configuration list for PBXNativeTarget "AppLionMobile" */;
+			buildPhases = (
+				625625EA1A6CCE470042703F /* Sources */,
+				625625EB1A6CCE470042703F /* Frameworks */,
+				625625EC1A6CCE470042703F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppLionMobile;
+			productName = AppLionMobile;
+			productReference = 625625EE1A6CCE470042703F /* AppLionMobile.app */;
+			productType = "com.apple.product-type.application";
+		};
+		625626091A6CCE470042703F /* AppLionMobileTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 625626171A6CCE480042703F /* Build configuration list for PBXNativeTarget "AppLionMobileTests" */;
+			buildPhases = (
+				625626061A6CCE470042703F /* Sources */,
+				625626071A6CCE470042703F /* Frameworks */,
+				625626081A6CCE470042703F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6256260C1A6CCE470042703F /* PBXTargetDependency */,
+			);
+			name = AppLionMobileTests;
+			productName = AppLionMobileTests;
+			productReference = 6256260A1A6CCE470042703F /* AppLionMobileTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		625625E61A6CCE470042703F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = sloot;
+				TargetAttributes = {
+					625625ED1A6CCE470042703F = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					625626091A6CCE470042703F = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 625625ED1A6CCE470042703F;
+					};
+				};
+			};
+			buildConfigurationList = 625625E91A6CCE470042703F /* Build configuration list for PBXProject "AppLionMobile" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 625625E51A6CCE470042703F;
+			productRefGroup = 625625EF1A6CCE470042703F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				625625ED1A6CCE470042703F /* AppLionMobile */,
+				625626091A6CCE470042703F /* AppLionMobileTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		625625EC1A6CCE470042703F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625626001A6CCE470042703F /* Main.storyboard in Resources */,
+				625626051A6CCE470042703F /* LaunchScreen.xib in Resources */,
+				625626021A6CCE470042703F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625626081A6CCE470042703F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		625625EA1A6CCE470042703F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625625F71A6CCE470042703F /* AppDelegate.m in Sources */,
+				625625FA1A6CCE470042703F /* AppLionMobile.xcdatamodeld in Sources */,
+				625625FD1A6CCE470042703F /* ViewController.m in Sources */,
+				625625F41A6CCE470042703F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		625626061A6CCE470042703F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				625626111A6CCE480042703F /* AppLionMobileTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6256260C1A6CCE470042703F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 625625ED1A6CCE470042703F /* AppLionMobile */;
+			targetProxy = 6256260B1A6CCE470042703F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		625625FE1A6CCE470042703F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625625FF1A6CCE470042703F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		625626031A6CCE470042703F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				625626041A6CCE470042703F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		625626121A6CCE480042703F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		625626131A6CCE480042703F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		625626151A6CCE480042703F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AppLionMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		625626161A6CCE480042703F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AppLionMobile/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		625626181A6CCE480042703F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppLionMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLionMobile.app/AppLionMobile";
+			};
+			name = Debug;
+		};
+		625626191A6CCE480042703F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = AppLionMobileTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AppLionMobile.app/AppLionMobile";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		625625E91A6CCE470042703F /* Build configuration list for PBXProject "AppLionMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625626121A6CCE480042703F /* Debug */,
+				625626131A6CCE480042703F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		625626141A6CCE480042703F /* Build configuration list for PBXNativeTarget "AppLionMobile" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625626151A6CCE480042703F /* Debug */,
+				625626161A6CCE480042703F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		625626171A6CCE480042703F /* Build configuration list for PBXNativeTarget "AppLionMobileTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				625626181A6CCE480042703F /* Debug */,
+				625626191A6CCE480042703F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		625625F81A6CCE470042703F /* AppLionMobile.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				625625F91A6CCE470042703F /* AppLionMobile.xcdatamodel */,
+			);
+			currentVersion = 625625F91A6CCE470042703F /* AppLionMobile.xcdatamodel */;
+			path = AppLionMobile.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 625625E61A6CCE470042703F /* Project object */;
+}
