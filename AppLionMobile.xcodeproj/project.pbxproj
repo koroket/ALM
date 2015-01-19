@@ -17,6 +17,7 @@
 		6256261D1A6CD4E20042703F /* LoadingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256261C1A6CD4E20042703F /* LoadingViewController.m */; };
 		625626201A6CD4FE0042703F /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256261F1A6CD4FE0042703F /* LoginViewController.m */; };
 		625626231A6CD50B0042703F /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626221A6CD50B0042703F /* SignUpViewController.m */; };
+		625626261A6CD9150042703F /* RailsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626251A6CD9150042703F /* RailsCommunication.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,8 @@
 		6256261F1A6CD4FE0042703F /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		625626211A6CD50B0042703F /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		625626221A6CD50B0042703F /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
+		625626241A6CD9150042703F /* RailsCommunication.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RailsCommunication.h; sourceTree = "<group>"; };
+		625626251A6CD9150042703F /* RailsCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RailsCommunication.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 			children = (
 				625625F51A6CCE470042703F /* AppDelegate.h */,
 				625625F61A6CCE470042703F /* AppDelegate.m */,
+				625626241A6CD9150042703F /* RailsCommunication.h */,
+				625626251A6CD9150042703F /* RailsCommunication.m */,
 				6256261A1A6CD4C70042703F /* Initializing */,
 				625625FE1A6CCE470042703F /* Main.storyboard */,
 				625626011A6CCE470042703F /* Images.xcassets */,
@@ -246,6 +251,7 @@
 				625625F41A6CCE470042703F /* main.m in Sources */,
 				6256261D1A6CD4E20042703F /* LoadingViewController.m in Sources */,
 				625626201A6CD4FE0042703F /* LoginViewController.m in Sources */,
+				625626261A6CD9150042703F /* RailsCommunication.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

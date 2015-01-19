@@ -7,7 +7,7 @@
 //
 
 #import "LoginViewController.h"
-
+#import "RailsCommunication.h"
 @interface LoginViewController ()
 
 @end
@@ -28,6 +28,23 @@
 {
     [aTextField resignFirstResponder];
     return YES;
+}
+- (IBAction)loginPressed:(id)sender {
+    [[RailsCommunication sharedCommunicator] loginWithCompletion:^(NSData *data,
+                                              NSURLResponse *response,
+                                              NSError *error)
+     {
+         NSHTTPURLResponse *httpResponse = (NSHTTPURLResponse *)response;
+         NSInteger responseStatusCode = [httpResponse statusCode];
+         
+         NSDictionary *fetchedData = [NSJSONSerialization JSONObjectWithData:data
+                                                                options:0
+                                                                  error:nil];
+         NSLog(@"ERROR: %@\n",fetchedData);
+         NSLog(@"NSURLRESPONSE: %@\n",response);
+         NSLog(@"NSERROR: %@\n",error);
+         
+     }];
 }
 
 /*
