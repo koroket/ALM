@@ -20,6 +20,7 @@
 		625626261A6CD9150042703F /* RailsCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626251A6CD9150042703F /* RailsCommunication.m */; };
 		625626291A6D0A000042703F /* AppCommunication.m in Sources */ = {isa = PBXBuildFile; fileRef = 625626281A6D0A000042703F /* AppCommunication.m */; };
 		6256262D1A6D0B100042703F /* ProfileTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256262C1A6D0B100042703F /* ProfileTableViewController.m */; };
+		625626301A6D19BB0042703F /* DetailedOpportunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6256262F1A6D19BB0042703F /* DetailedOpportunityViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		625626281A6D0A000042703F /* AppCommunication.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppCommunication.m; sourceTree = "<group>"; };
 		6256262B1A6D0B100042703F /* ProfileTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProfileTableViewController.h; sourceTree = "<group>"; };
 		6256262C1A6D0B100042703F /* ProfileTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProfileTableViewController.m; sourceTree = "<group>"; };
+		6256262E1A6D19BB0042703F /* DetailedOpportunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailedOpportunityViewController.h; sourceTree = "<group>"; };
+		6256262F1A6D19BB0042703F /* DetailedOpportunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailedOpportunityViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +162,8 @@
 			children = (
 				6256262B1A6D0B100042703F /* ProfileTableViewController.h */,
 				6256262C1A6D0B100042703F /* ProfileTableViewController.m */,
+				6256262E1A6D19BB0042703F /* DetailedOpportunityViewController.h */,
+				6256262F1A6D19BB0042703F /* DetailedOpportunityViewController.m */,
 			);
 			name = App;
 			sourceTree = "<group>";
@@ -267,6 +272,7 @@
 				625625FA1A6CCE470042703F /* AppLionMobile.xcdatamodeld in Sources */,
 				625626231A6CD50B0042703F /* SignUpViewController.m in Sources */,
 				6256262D1A6D0B100042703F /* ProfileTableViewController.m in Sources */,
+				625626301A6D19BB0042703F /* DetailedOpportunityViewController.m in Sources */,
 				625625F41A6CCE470042703F /* main.m in Sources */,
 				625626291A6D0A000042703F /* AppCommunication.m in Sources */,
 				6256261D1A6CD4E20042703F /* LoadingViewController.m in Sources */,

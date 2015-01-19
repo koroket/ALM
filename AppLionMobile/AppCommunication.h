@@ -12,4 +12,6 @@
 + (instancetype)sharedCommunicator;
 @property (nonatomic,strong) NSArray* opportunities;
 @property (nonatomic,strong) NSString* email;
+@property (nonatomic,assign) int selectedOpportunityIndex;
+
 @end

@@ -12,13 +12,19 @@
 @interface LoginViewController ()
 @property (strong, nonatomic) IBOutlet UITextField *emailTextField;
 @property (strong, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (strong, nonatomic) IBOutlet UILabel *errorLabel;
 
 @end
 
 @implementation LoginViewController
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    self.errorLabel.alpha = 0.0;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     // Do any additional setup after loading the view.
 }
 
@@ -51,20 +57,31 @@
                             NSDictionary *fetchedData = [NSJSONSerialization JSONObjectWithData:data
                                                                                         options:0
                                                                                           error:nil];
-                            NSLog(@"Response: %@\n",fetchedData);
-                            NSLog(@"NSURLRESPONSE: %@\n",response);
-                            NSLog(@"NSERROR: %@\n",error);
                             
-                            NSLog([NSString stringWithFormat:@"MY TOKEN IS: %@",fetchedData[@"mobile_token"]]);
-                            NSDictionary *userinfo = fetchedData[@"opportunities"];
-                            NSArray* opplist = userinfo[@"opportunities"];
-                            NSString* email = userinfo[@"email"];
                             
-                            [AppCommunication sharedCommunicator].email = email;
-                            [AppCommunication sharedCommunicator].opportunities = opplist;
-                            [self performSegueWithIdentifier:@"Loggingin" sender:self];
+                            if(responseStatusCode==200&&!fetchedData[@"error"])
+                            {
+                                
+                                NSDictionary *userinfo = fetchedData[@"opportunities"];
+                                NSArray* opplist = userinfo[@"opportunities"];
+                                NSLog(@"%@",opplist);
+                                NSString* email = userinfo[@"email"];
+                                
+                                [AppCommunication sharedCommunicator].email = userinfo[@"email"];
+                                [AppCommunication sharedCommunicator].opportunities = userinfo[@"opportunities"];
+                                
+                                [self performSegueWithIdentifier:@"Loggingin" sender:self];
+                            }
+                            else
+                            {
+                                    self.errorLabel.alpha = 1.0;
+                            }
                         });
      }];
+}
+- (IBAction)unwindToLoginViewController:(UIStoryboardSegue *)segue
+{
+    
 }
 //-(void)workingfunction
 //{

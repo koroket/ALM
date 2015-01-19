@@ -42,29 +42,38 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Item Cell" forIndexPath:indexPath];
-    
+    [cell.textLabel removeFromSuperview];
+    UILabel *companyLabel = (UILabel *)[cell viewWithTag:1];
+    UILabel *positionLabel = (UILabel *)[cell viewWithTag:2];
     NSDictionary* opportunity = [AppCommunication sharedCommunicator].opportunities[indexPath.row];
     if(opportunity){
         
         NSDictionary* company = opportunity[@"company"];
         
         if(company){
+            
             if(company[@"name"]){
-                cell.textLabel.text = company[@"name"];
+                companyLabel.text = company[@"name"];
             }
             else{
-                cell.textLabel.text = @"No Company";
+                companyLabel.text = @"No Company";
             }
-//            if(opportunity[@"position"]){
-//                cell.textLabel.text = opportunity[@"position"];
-//            }
-//            else{
-//                cell.textLabel.text = @"No position";
-//            }
+            if(opportunity[@"position"]){
+                positionLabel.text = opportunity[@"position"];
+            }
+            else{
+                positionLabel.text = @"No position";
+            }
         }
     }
     
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    [AppCommunication sharedCommunicator].selectedOpportunityIndex = indexPath.row;
+}
+- (IBAction)logoutPressed:(id)sender {
+    [self performSegueWithIdentifier:@"Logout" sender:self];
 }
 
 
