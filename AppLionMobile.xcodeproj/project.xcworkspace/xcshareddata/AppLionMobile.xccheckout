@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>9AF5B9C6-6E35-4497-A949-399679F6DF2A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AppLionMobile</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>3D2A8BEA93BECF4A4FD1839A3856A0664CD4EAAA</key>
+		<string>https://github.com/koroket/ALM.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>AppLionMobile.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>3D2A8BEA93BECF4A4FD1839A3856A0664CD4EAAA</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/koroket/ALM.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>3D2A8BEA93BECF4A4FD1839A3856A0664CD4EAAA</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>3D2A8BEA93BECF4A4FD1839A3856A0664CD4EAAA</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AppLionMobile</string>
+		</dict>
+	</array>
+</dict>
+</plist>
